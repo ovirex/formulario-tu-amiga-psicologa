@@ -81,7 +81,7 @@ function changeTextResults(heading, text, btnText, isExtreme = false) {
     );
 
     window.scroll({
-        top: resultsContainerPosition.top,
+        top: resultsContainerPosition.top - 200,
         left: 0,
         behavior: "smooth",
     });
