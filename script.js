@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (extremeOptions > 0) {
             changeTextResults(
                 "",
-                "Te identificaste con una situación bastante difícil y traumática, que posiblemente esté afectándote, puede que no lo notes porque intentas sobrellevarlo o puede que lo hayas reprimido. Definitivamente necesitas iniciar un proceso psicoterapéutico, para sanar la herida y restablecer el vínculo. Yo puedo ayudarte.",
+                "<strong>Te identificaste con una situación bastante difícil y traumática, que posiblemente esté afectándote</strong>, puede que no lo notes porque intentas sobrellevarlo o puede que lo hayas reprimido. Definitivamente necesitas iniciar un proceso psicoterapéutico, para sanar la herida y restablecer el vínculo. Yo puedo ayudarte.",
                 "Contáctame",
                 true
             );
@@ -69,6 +69,7 @@ function changeTextResults(heading, text, btnText, isExtreme = false) {
     resultTextWrapper.getElementsByTagName("a")[0].innerText = btnText;
 
     if (isExtremeOption) {
+        resultTextWrapper.getElementsByTagName("p")[0].innerHTML = text;
         resultTextWrapper.getElementsByTagName("a")[0].href = "";
     } else {
         resultTextWrapper.getElementsByTagName("a")[0].href =
