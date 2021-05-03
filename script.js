@@ -70,7 +70,8 @@ function changeTextResults(heading, text, btnText, isExtreme = false) {
 
     if (isExtremeOption) {
         resultTextWrapper.getElementsByTagName("p")[0].innerHTML = text;
-        resultTextWrapper.getElementsByTagName("a")[0].href = "";
+        resultTextWrapper.getElementsByTagName("a")[0].href =
+            "https://tuamigapsicologa.com/contacto/";
     } else {
         resultTextWrapper.getElementsByTagName("a")[0].href =
             "https://www.instagram.com/tuamigapsicologa/reels/";
